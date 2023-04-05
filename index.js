@@ -1,17 +1,15 @@
+require("dotenv").config();
+const connectToDB = require("./database/database");
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 5656;
-const Product = require("./model/Product");
-require("dotenv").config();
-const connectToDB = require("./database/database");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
 app.use(cors());
+const Product = require("./model/Product");
 
 connectToDB();
-
 
 app.get("/", async (req, res) => {
   const products = await Product.find();
