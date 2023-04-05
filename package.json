@@ -2,10 +2,10 @@
   "name": "node-2",
   "version": "1.0.0",
   "description": "Meu exemplo de nodejs",
-  "main": "Server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node Server",
-    "dev": "nodemon Server"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
