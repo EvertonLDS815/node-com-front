@@ -1,20 +1,27 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 5656;
-const path = require("path");
-const router = require("./src/routes/route");
+const Product = require("./src/models/Product");
 require("dotenv").config();
 const connectToDB = require("./src/database/database");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "/src/public")));
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
 
 connectToDB();
 
-app.use(router);
+
+app.get("/", async (req, res) => {
+  const products = await Product.find();
+  res.json(products);
+});
+app.get("/", async (req, res) => {
+  const newProduct = req.body;
+  await Product.create(newProduct);
+  res.status(201).json(newProduct);
+});
 
 app.listen(port, () =>
   console.log(`🚀 My Server is on port http://localhost:${port}`)
