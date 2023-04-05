@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Meu exemplo de nodejs",
   "main": "index.js",
+  "engines": {
+    "node": "16x"
+  },
   "scripts": {
     "start": "node index",
     "dev": "nodemon index"
