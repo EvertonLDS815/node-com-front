@@ -17,7 +17,7 @@ app.get("/", async (req, res) => {
   res.json(products);
 });
 
-app.post("/post", async (req, res) => {
+app.post("/", async (req, res) => {
   const newProduct = req.body;
   await Product.create(newProduct);
 
