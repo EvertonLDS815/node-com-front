@@ -1,9 +1,11 @@
 {
     "version": 2,
     "public": true,
-    "builds": {
+    "builds": [
+        {
             "use": "@vercel/node"
-        },
+        }
+    ],
     "routes": [
         {
             "src": "/(.*)",
