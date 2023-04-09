@@ -4,10 +4,10 @@
   "description": "Meu exemplo de nodejs",
   "main": "index.js",
   "engines": {
-    "node": "16"
+    "node": "18"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/index.js",
     "dev": "nodemon api/index"
   },
   "repository": {
