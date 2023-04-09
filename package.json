@@ -4,7 +4,7 @@
   "description": "Meu exemplo de nodejs",
   "main": "index.js",
   "engines": {
-    "node": "18"
+    "node": "^18.15.0"
   },
   "scripts": {
     "start": "node src/index.js",
