@@ -11,8 +11,5 @@
             "src": "/(.*)",
             "dest": "index.js"
         }
-    ],
-    "env": {
-        "DB_URI": "mongodb+srv://everton:evertonqq123@cluster0.o7quivj.mongodb.net/?retryWrites=true&w=majority"
-    }
+    ]
 }
