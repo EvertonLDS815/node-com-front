@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index",
-    "vercel-build": "npm run build"
+    "vercel-build": "node vercel.json"
   },
   "repository": {
     "type": "git",
