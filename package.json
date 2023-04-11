@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon",
-    "vercel-build": "node vercel.json"
+    "vercel-build": "npx prisma migrate deploy"
   },
   "repository": {
     "type": "git",
