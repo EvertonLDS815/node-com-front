@@ -8,8 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index",
-    "vercel-build": "npx prisma migrate deploy"
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
