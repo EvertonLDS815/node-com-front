@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/EvertonLDS815/test-node#readme",
   "dependencies": {
-    "@vercel/node": "^2.8.15",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
