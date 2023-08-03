@@ -9,6 +9,18 @@ const loginSchema = new Schema({
     type: String,
     require: true,
   },
+  description: {
+    type: String,
+    require: true,
+  },
+  quantity: {
+    type: String,
+    require: true,
+  },
+  code: {
+    type: String,
+    require: true,
+  },
 });
 
 module.exports = model("Product", loginSchema);
